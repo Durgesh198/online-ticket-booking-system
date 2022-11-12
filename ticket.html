@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+
+
+<br><br>
+{% block content %}
+
+
+
+<head>
+  <style>
+         body{
+          background-image: url("{{url_for('static', filename='ipl.webp')}}");
+        }
+        </style>
+ 
+</head>
+
+
+
+
+
+
+
+ 
+
+
+<br><br>
+<div class="card bg-dark text-white">
+  <img class="card-img" src="static/ticket1.png"  height="300" alt="Card image">
+  <div class="card-img-overlay">
+    
+    <h5 class="card-title" align="center"> <b><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-perforated" viewBox="0 0 16 16">
+      <path d="M4 4.85v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z"/>
+      <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Z"/>
+    </svg>...YOUR TICKET...<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-perforated" viewBox="0 0 16 16">
+      <path d="M4 4.85v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z"/>
+      <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Z"/>
+    </svg></b></h5>
+
+
+    
+
+    <p class="card-text"><b>USER ID:</b>    1001</p>
+    <p class="card-text"><b>Match Name:</b>    Mumbai Indians VS Delhi Capitals</p>
+    <p class="card-text"><b>Match Venue :</b>    Brebourne stadium, Mumbai 19:00</p>
+    <p class="card-text"><b>Seat Number :</b>    45</p>
+    
+    <p class="card-text">Last updated 3 mins ago, Enjoy Your Match..!!!</p>
+
+
+    <div align="center">
+      <button type="button" class="btn btn-success">Print</button>
+    </div>
+
+
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+

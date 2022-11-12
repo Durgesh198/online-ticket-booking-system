@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br><br>
+<h1 align="center">Users</h1>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">NAME</th>
+      <th scope="col">SALARY</th>
+      <th scope="col">EMAIL</th>
+      <th scope="col">ACTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for i in users %}
+    <tr>
+      <th scope="row">{{i[0]}}</th>
+      <td>{{i[1]}}</td>
+      <td>{{i[2]}}</td>
+      <td>{{i[3]}}</td>
+      <td><a href="/delete/{{i[0]}}"><button type="submit" class="btn btn-danger">DELETE</button></a>
+        <a href="/edit/{{i[0]}}"><button type="submit" class="btn btn-info">EDIT</button></a>
+      </td>
+      
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+  {% endblock %}

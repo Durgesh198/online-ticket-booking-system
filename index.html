@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<head>
+  <style>
+		body{
+		  background-image: url("{{url_for('static', filename='ipl.webp')}}");
+		}
+		</style>
+
+</head>
+
+{% for i in users %}
+
+    <table>
+      <th scope="row">{{i[0]}}</th>
+      <td>{{i[1]}}</td>
+      <td>{{i[2]}}</td>
+      <td></td>
+    </table>
+  {% endfor %}
+
+
+<div class="container mt-5">
+  
+    <div class="row">
+      {% for i in users %}
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="static/{{i[5]}}" alt="Card image cap">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+              <h4 class="card-title"><b>{{i[4]}}</b>S</h4>
+              <p class="card-text">The 2nd match of the Tata IPL 2022 will see Delhi Capitals facing off against Mumbai Indians on 27th March at the Brabourne Stadium, Mumbai.</p>
+              <a href="/book/{{i[0]}}" class="btn btn-info">BOOK NOW</a>
+            </div>
+          </div>
+      </div>
+      {% endfor %}
+    </div>
+    
+    </div>
+
+
+
+
+{% endblock %}
